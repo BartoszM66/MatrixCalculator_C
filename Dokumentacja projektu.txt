@@ -1,0 +1,63 @@
+Dokumentacja Projektu: Kalkulator Mnożenia Macierzy
+
+1. Opis Projektu
+Kalkulator Mnożenia Macierzy jest programem napisanym w języku C, który umożliwia użytkownikowi wprowadzanie macierzy, wykonywanie operacji mnożenia macierzy oraz obliczanie wyznacznika macierzy. Program obsługuje różne typy danych, takie jak liczby całkowite i liczby zmiennoprzecinkowe.
+
+2. Sposób Korzystania z Programu
+Wprowadzenie Wymiarów Macierzy
+Na początku użytkownik jest proszony o wprowadzenie wymiarów pierwszej i drugiej macierzy (ilość wierszy i kolumn), bądź wprowadzenie pierwszej macierzy z pliku.
+Program wczytuje wymiary i alokuje pamięć na macierze.
+
+Wprowadzenie Danych Macierzy
+Użytkownik jest następnie proszony o wprowadzenie elementów obu macierzy.
+Program sprawdza poprawność wprowadzonych danych i wczytuje je do odpowiednich struktur danych.
+
+Mnożenie Macierzy
+Wykonuje się operacja mnożenia macierzy.
+Program sprawdza, czy wymiary macierzy są zgodne do mnożenia.
+
+Obliczanie Wyznacznika Macierzy
+Oblicza się wyznacznik macierzy wynikowej mnożenia.
+Program sprawdza, czy macierz wynikowa jest kwadratowa przed obliczeniem wyznacznika.
+
+Zapisywanie Wyniku do Pliku
+Wynik mnożenia macierzy jest zapisywany do pliku o nazwie "result.txt".
+Struktura danych macierzy i jej zawartość są zapisywane w formie czytelnej dla użytkownika.
+
+Wczytywanie Wyniku z Pliku
+Wynik mnożenia macierzy zapisany w pliku "result.txt" jest wczytywany do programu.
+Program wyświetla wczytaną macierz.
+
+3. Struktura Kodu
+Matrix Struktura: Struktura reprezentująca macierz, zawierająca liczbę wierszy, kolumn oraz dwuwymiarową tablicę danych macierzy.
+
+Funkcje:
+allocateMatrix: Alokuje pamięć dla macierzy.
+freeMatrix: Zwalnia pamięć zajętą przez macierz.
+inputMatrix: Wprowadza dane do macierzy.
+displayMatrix: Wyświetla macierz na ekranie.
+multiplyMatrices: Mnoży dwie macierze.
+determinant: Oblicza wyznacznik macierzy.
+readMatrixFromFile: Wczytuje macierz z pliku.
+writeMatrixToFile: Zapisuje macierz do pliku.
+
+4. Obsługa Błędów
+Niepoprawne Wymiary Macierzy:
+Program sprawdza, czy ilość kolumn pierwszej macierzy jest równa ilości wierszy drugiej macierzy przed mnożeniem.
+Informuje użytkownika o błędzie i kończy program, jeśli wymiary są niezgodne.
+
+Błąd Wprowadzania Danych:
+W przypadku błędnych danych wejściowych (np. nieprawidłowa liczba), program informuje użytkownika i kończy się.
+
+Błąd Otwarcia Pliku:
+Jeśli program nie może otworzyć pliku do zapisu lub odczytu, informuje użytkownika i kończy się.
+
+5. Testowanie
+Program przeszedł testy jednostkowe ręczne, z uwagi na prostotę działania.
+
+6. Optymalizacja
+Program został napisany z myślą o prostocie i czytelności.
+Możliwości optymalizacji zależą od specyfiki danych wejściowych i wymagań wydajnościowych. Implementacja algorytmu mnożenia macierzy może być dostosowana w zależności od konkretnych potrzeb.
+
+7. Podsumowanie
+Kalkulator Mnożenia Macierzy to prosty program, który umożliwia użytkownikowi manipulację macierzami, mnożenie ich, obliczanie wyznacznika, a także zapisywanie i wczytywanie ich z pliku.
